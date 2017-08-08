@@ -1,0 +1,53 @@
+runtime: php55
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
+
+- url: /example1.html
+  static_files: www/example1.html
+  upload: www/example1.html
+  
+- url: /example2.html
+  static_files: www/example2.html
+  upload: www/example2.html  
+  
+- url: /example3.html
+  static_files: www/example3.html
+  upload: www/example3.html  
+  
+- url: /example4.html
+  static_files: www/example4.html
+  upload: www/example4.html  
+  
+- url: /example5.html
+  static_files: www/example5.html
+  upload: www/example5.html  
+  
+- url: /example6.html
+  static_files: www/example6.html
+  upload: www/example6.html  
+  
+- url: /example7.html
+  static_files: www/example7.html
+  upload: www/example7.html  
+  
+- url: /speedtest_worker.js
+  static_files: www/speedtest_worker.js
+  upload: www/speedtest_worker.js
+  
+- url: /speedtest_worker.min.js
+  static_files: www/speedtest_worker.min.js
+  upload: www/speedtest_worker.min.js
+
+- url: /garbage.php
+  script: garbage.php
+
+- url: /empty.php
+  script: empty.php
+
+- url: /getIP.php
+  script: getIP.php
